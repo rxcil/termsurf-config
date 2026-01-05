@@ -1,0 +1,38 @@
+# --- Theme ---
+# Run: ghostty +list-themes | grep -i tokyo
+# Then set this to the exact theme name shown by your Ghostty:
+theme = tokyonight
+
+# --- Font ---
+font-family = "JetBrainsMono Nerd Font"
+font-size = 11
+
+# --- Shell / program + env ---
+# WezTerm default_prog equivalent:
+env = XDG_CONFIG_HOME=/Users/ryan.charles/.config
+command = /Users/ryan.charles/.nix-profile/bin/nu --login
+
+# Splits (Ghostty can't set "Cells = 100" like WezTerm)
+keybind = cmd+j=new_split:down
+keybind = cmd+k=new_split:up
+keybind = cmd+l=new_split:right
+keybind = cmd+h=new_split:left
+
+# Navigate splits (pane focus)
+keybind = ctrl+l=goto_split:right
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+k=goto_split:up
+keybind = ctrl+j=goto_split:down
+
+# Resize splits (Ghostty uses pixels, not cells)
+keybind = ctrl+alt+left=resize_split:left,80
+keybind = ctrl+alt+right=resize_split:right,80
+keybind = ctrl+alt+up=resize_split:up,40
+keybind = ctrl+alt+down=resize_split:down,40
+
+# Move tab left/right
+keybind = ctrl+shift+left=move_tab:-1
+keybind = ctrl+shift+right=move_tab:1
+
+# Zoom current split (toggle)
+keybind = ctrl+shift+z=toggle_split_zoom
