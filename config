@@ -8,8 +8,8 @@ font-family = "JetBrainsMono Nerd Font"
 font-size = 11
 
 # --- Shell / program + env ---
-env = XDG_CONFIG_HOME=/Users/ryan/.config
-# command = /opt/homebrew/bin/nu --login
+env = XDG_CONFIG_HOME=/Users/ryan.charles/.config
+command = /opt/homebrew/bin/nu --login
 
 # Splits (Ghostty can't set "Cells = 100" like WezTerm)
 keybind = cmd+j=new_split:down
