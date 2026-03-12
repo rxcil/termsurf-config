@@ -3,6 +3,20 @@
 # Then set this to the exact theme name shown by your Ghostty:
 theme = tokyonight
 
+# --- Colors ---
+unfocused-split-opacity = 1.00
+unfocused-split-fill = 050505
+focused-split-border-color = 7dcfff
+unfocused-split-border-color = 565f89
+# unfocused-split-saturation = 0.8
+split-border-width = 2
+background = 222436
+foreground = e0e5fa
+
+# --- Cursor ---
+cursor-color = FA8603
+cursor-text = FFFFFF
+
 # --- Font ---
 font-family = "JetBrainsMono Nerd Font"
 font-size = 11
