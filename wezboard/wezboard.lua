@@ -186,7 +186,7 @@ local config = {
   },
   focused_split_border_color = "#7dcfff",
   unfocused_split_border_color = "#565f89",
-  split_border_width = 2,
+  split_border_width = 4,
 
   window_frame = {
     -- Titlebar colors
@@ -210,12 +210,18 @@ local config = {
   initial_rows = 72, -- number of character cells tall
 
   -- disable nushell for now
+  -- default_prog = {
+  --   "env",
+  --   "XDG_CONFIG_HOME=/Users/ryan.charles/.config",
+  --   -- "/Users/ryan.charles/.nix-profile/bin/nu",
+  --   "/opt/homebrew/bin/nu",
+  --   "--login",
+  -- },
   default_prog = {
     "env",
     "XDG_CONFIG_HOME=/Users/ryan.charles/.config",
     -- "/Users/ryan.charles/.nix-profile/bin/nu",
-    "/opt/homebrew/bin/nu",
-    "--login",
+    "/Users/ryan.charles/.cargo/bin/shannon",
   },
 
   mouse_bindings = {
